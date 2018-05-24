@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="4cd565a8ed2150392c21a4c5cde2bf6e" name="FG_STAGE_FINANCIALCONTRACT_2_FINANCIALCONTRACT" runtimeBehavior="BATCH_TASK">
+  <annotations key="sap.afm.layout" xmi:id="f718337f1a9369ee14803254dc19b4de">
+    <annotations xmi:id="3334b3ed925155f752cc721823031337" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="9470658dfb80b68805874b380d689e4c" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="b390d5cef3db8d57c1e42699c5efd545" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="adce2267bd6352607f2e3b362300afc6" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="91c84b661d93f5604a2c16dd1ec08f1d" key="sap.afm.palette">
+    <annotations xmi:id="6b1ffc236f3d228922939c037d1dcb1a" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="a515cb7dcc843f75361316a111e6dd13" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="c3472e7808e3f47ef4c596abbe890ddb" key="sap.afm.nodeInputs">
+  </annotations>
+  <annotations xmi:id="016ec6c3c46ee27923426d00e379363e" key="sap.afm.nodeOutputs">
+  </annotations>
+  <tableMappings xmi:id="3422616be55639140f34963f8301d3cc" source="f8f699bb0069485508a2441d0883fbdc" target="9942f47c7cded8061e486142f203bacb">
+    <attributeMappings xmi:id="bd5f7423c3d1af33d9da985b676f177b" source="7ee2b009dac5e71ea7acdfea2c022dc7" target="972879686be0203b7436a403287d24ac">
+    </attributeMappings>
+    <attributeMappings xmi:id="990fd723f824316b26843158d7216c25" source="5208a58a3ad27ef155a49f3b969ec49f" target="940556acc25ea25356d6296a833c1069">
+    </attributeMappings>
+    <attributeMappings xmi:id="4409a8a9ec4166196b25b042bef06378" source="a12c121ac52390e3dc846e8662619a2a" target="07c9be768cdc7b760dbf5580d21ba080">
+    </attributeMappings>
+    <attributeMappings xmi:id="516dd84bd2762e292c511643145fb7da" source="23b90de1f7032bb4e97cc4a7ba24c615" target="b7ae0c21e4c3ad34e43e7dd69aa153bc">
+    </attributeMappings>
+    <attributeMappings xmi:id="fa8edf7f571d6ab5335345a26ef814e8" source="022de45dc1343b7a221d038607a16d49" target="0bc243497471831d624b3f4b0351a134">
+    </attributeMappings>
+    <attributeMappings xmi:id="3938298d24036ff365541a4d85f8b30e" source="bb8ced67ac03dab388ef53be77c01d72" target="88dad76457b683df73a5346a0ee6edce">
+    </attributeMappings>
+    <attributeMappings xmi:id="2bc7f75d8168387bb7a14b6525792a01" source="fbde5a142811ffa461df881f4168d03d" target="823319a7ebfc8c501f169a268f95712d">
+    </attributeMappings>
+    <attributeMappings xmi:id="5ffaf4ddda1699c1507fab212a950e01" source="286f00473f46d1403b17ffc6b9ecc6ba" target="9bd0d06e83cf1f81857d5ace65fcc07f">
+    </attributeMappings>
+    <attributeMappings xmi:id="6c0d631ef32625be03163b2be4c232ac" source="d5d2b4c5e849c91cdf223267305b5cd0" target="2ca852c0c081b9d46375b1d17622105d">
+    </attributeMappings>
+    <attributeMappings xmi:id="23e3fc404e53b28032256b2c707c0198" source="303bc4599540a6b8e79957d176ae40a3" target="b6b3e3fe6adbf1a0e5696d27dcbed2f9">
+    </attributeMappings>
+    <attributeMappings xmi:id="7041728daaf16151c9118b819fa4e35b" source="ac8e790a401b4c916794b42cde9aef3c" target="74c726528d7df8f2bb030823ea7fd8ef">
+    </attributeMappings>
+    <attributeMappings xmi:id="574976789041305c01db85a5a1908d92" source="1e7315c748858a732bd42183c5378297" target="d476ed51241d490984b7835fae03d5e7">
+    </attributeMappings>
+    <attributeMappings xmi:id="4eafbcbbb431f637daf069defbd841a3" source="ede404b23750ba67eb2bd015ff4c6ccb" target="53d905df62fdc040a1b9de299d6417ca">
+    </attributeMappings>
+    <attributeMappings xmi:id="a9b9b07eba73e1cc1715f43a73c118bb" source="77fdc0c5155ab701677b179193a161d2" target="73f2a1a38d0a075b8dba5d9c8c3c91bc">
+    </attributeMappings>
+    <attributeMappings xmi:id="392f751c1b69b6ee42ec2e25d5abba6b" source="f06a4085a04a66cea21ab2a360adcf82" target="dbb71ddf6eee69c1d2531b632cfe92a6">
+    </attributeMappings>
+  </tableMappings>
+  <nodes xmi:id="db583ebea581bb46738cd1400c74899b" name="DataSource" catalogObjectName="DWF20_FSDP_SOURCEDATA::STAGE_FINANCIALCONTRACT" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN">
+    <annotations key="sap.afm.layout" xmi:id="1b7ff99cf085bdab7cc48f5fcdcad99c">
+      <annotations xmi:id="a56ff742c23bedac77ce2c5e2ead5a2c" key="x" value="94">
+      </annotations>
+      <annotations xmi:id="5791610c14c681b1faa406444c791592" key="y" value="108">
+      </annotations>
+      <annotations xmi:id="817c2245aa542287a0914ff3e50faf97" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="713c6c4f601f0f88f23d8dd507842edb" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="63f0f9fd1eb3e0fd5e45e3a17bc63b13" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="141323283a433e823445f5beccfaeda5" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="e2835b6cd007c575638447f932973e8c" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="45c6ac2a4ae9940d79588a9441215b1f" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="52214fb30287e7cd0d4f77b3debb6340" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="07bef38d5ea275b94ceb92473b04b729" key="columns" value="[{&quot;name&quot;:&quot;FINANCIALCONTRACTID&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;SOURCESYSTEM&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNERID2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;DESCRIPTION&quot;,&quot;type&quot;:&quot;NCLOB&quot;,&quot;length&quot;:2147483647,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;COMPANYROLE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;COUNTERPARTYROLE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GOVERNINGLAWCOUNTRY&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:3,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SIGNINGDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BANKINGBOOKORTRADINGBOOK&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ASSOCIATEDPROJECT&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:100,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;AGREEDSTARTDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CLOSINGDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SEGREGATIONTYPE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CURRENCY3&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:3,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ACCOUNTOPENINGDATE3&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNER&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <outputs xmi:id="f8f699bb0069485508a2441d0883fbdc" name="DataSource">
+      <attributes xmi:id="7ee2b009dac5e71ea7acdfea2c022dc7" name="FINANCIALCONTRACTID" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="970277927fd8f9e04ca9133759af7727" key="sap.im.primaryKey" value="true"/>
+      </attributes>
+      <attributes xmi:id="5208a58a3ad27ef155a49f3b969ec49f" name="SOURCESYSTEM" type="NVARCHAR" nullable="false" length="40">
+      </attributes>
+      <attributes xmi:id="a12c121ac52390e3dc846e8662619a2a" name="BUSINESSPARTNERID2" type="NVARCHAR" nullable="false" length="64">
+      </attributes>
+      <attributes xmi:id="23b90de1f7032bb4e97cc4a7ba24c615" name="DESCRIPTION" type="NCLOB" nullable="true" length="2147483647">
+      </attributes>
+      <attributes xmi:id="022de45dc1343b7a221d038607a16d49" name="COMPANYROLE" type="NVARCHAR" nullable="true" length="20">
+      </attributes>
+      <attributes xmi:id="bb8ced67ac03dab388ef53be77c01d72" name="COUNTERPARTYROLE" type="NVARCHAR" nullable="true" length="20">
+      </attributes>
+      <attributes xmi:id="fbde5a142811ffa461df881f4168d03d" name="GOVERNINGLAWCOUNTRY" type="NVARCHAR" nullable="true" length="3">
+      </attributes>
+      <attributes xmi:id="286f00473f46d1403b17ffc6b9ecc6ba" name="SIGNINGDATE" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="d5d2b4c5e849c91cdf223267305b5cd0" name="BANKINGBOOKORTRADINGBOOK" type="NVARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="303bc4599540a6b8e79957d176ae40a3" name="ASSOCIATEDPROJECT" type="NVARCHAR" nullable="true" length="100">
+      </attributes>
+      <attributes xmi:id="ac8e790a401b4c916794b42cde9aef3c" name="AGREEDSTARTDATE" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="1e7315c748858a732bd42183c5378297" name="CLOSINGDATE" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="ede404b23750ba67eb2bd015ff4c6ccb" name="SEGREGATIONTYPE" type="NVARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="77fdc0c5155ab701677b179193a161d2" name="CURRENCY3" type="NVARCHAR" nullable="true" length="3">
+      </attributes>
+      <attributes xmi:id="f06a4085a04a66cea21ab2a360adcf82" name="ACCOUNTOPENINGDATE3" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="2c246156c66cdcaaf528e0b889170a50" name="BUSINESSPARTNER" type="NVARCHAR" nullable="true" length="64">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xmi:id="0704268928b955a8e762415119baf16d" name="DataTarget" catalogObjectName="DWF20_FSDP::FINANCIALCONTRACT" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN" truncateTable="true">
+    <annotations key="sap.afm.layout" xmi:id="f09e53609dc3899e7320a796029a22fb">
+      <annotations xmi:id="cf7ade2110bcd420b35020d6c3db004d" key="x" value="514">
+      </annotations>
+      <annotations xmi:id="97e935502f7ad1ff244342d9c6401d2b" key="y" value="108">
+      </annotations>
+      <annotations xmi:id="bddc605fa55a925ceb8839b38a6d4046" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="4ac1871a8b3173eb737007918e99c20d" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="d260afab3d11861ba9f85a1bd74ecc2c" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="dc4f00ce3954372f35b680ce0ca75c18" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="56e026ad63040b22ad28fce37eb88a8b" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="6d43bf85b410b83862c4cbf81bfd5331" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="0f9d7d8c91390239f671fc9ec922cdc2" key="sap.afm.displayName" value="Data Target">
+    </annotations>
+    <annotations xmi:id="c25ac5cfebb47ff27586cefb4642824e" key="columns" value="[{&quot;name&quot;:&quot;FINANCIALCONTRACTID&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;SOURCESYSTEM&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNERID2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;DESCRIPTION&quot;,&quot;type&quot;:&quot;NCLOB&quot;,&quot;length&quot;:2147483647,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;COMPANYROLE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;COUNTERPARTYROLE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GOVERNINGLAWCOUNTRY&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:3,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SIGNINGDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BANKINGBOOKORTRADINGBOOK&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ASSOCIATEDPROJECT&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:100,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;AGREEDSTARTDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CLOSINGDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SEGREGATIONTYPE&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CURRENCY3&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:3,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ACCOUNTOPENINGDATE3&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNER_1.BUSINESSPARTNERID2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <inputs xmi:id="9942f47c7cded8061e486142f203bacb" name="DataTarget">
+      <attributes xmi:id="972879686be0203b7436a403287d24ac" name="FINANCIALCONTRACTID" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="da4a54f8d53602b11f9e7857bad6d2ea" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="940556acc25ea25356d6296a833c1069" name="SOURCESYSTEM" type="NVARCHAR" nullable="false" length="40">
+        <annotations xmi:id="70611a54404b2ebae117e9eba70d5b03" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="07c9be768cdc7b760dbf5580d21ba080" name="BUSINESSPARTNERID2" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="1a81b294b2dd988d6694c3f1ce0b3e12" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="b7ae0c21e4c3ad34e43e7dd69aa153bc" name="DESCRIPTION" type="NCLOB" nullable="true" length="2147483647">
+        <annotations xmi:id="dae07ba43131a4adefa9bd9de0ff5376" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="0bc243497471831d624b3f4b0351a134" name="COMPANYROLE" type="NVARCHAR" nullable="true" length="20">
+        <annotations xmi:id="2eaf109e06fa2d613a0b4bfadd2bfdcc" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="88dad76457b683df73a5346a0ee6edce" name="COUNTERPARTYROLE" type="NVARCHAR" nullable="true" length="20">
+        <annotations xmi:id="eb8ed931bb679fe0555982000ba83560" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="823319a7ebfc8c501f169a268f95712d" name="GOVERNINGLAWCOUNTRY" type="NVARCHAR" nullable="true" length="3">
+        <annotations xmi:id="c95696c5f25eb1e4a1e8d799d333545b" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="9bd0d06e83cf1f81857d5ace65fcc07f" name="SIGNINGDATE" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="d1c09bad1c50483124c265264b0f4fe7" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="2ca852c0c081b9d46375b1d17622105d" name="BANKINGBOOKORTRADINGBOOK" type="NVARCHAR" nullable="true" length="10">
+        <annotations xmi:id="a2f3b56bbdf207b67d550173142ce7d9" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="b6b3e3fe6adbf1a0e5696d27dcbed2f9" name="ASSOCIATEDPROJECT" type="NVARCHAR" nullable="true" length="100">
+        <annotations xmi:id="f372caca9c5a40f0034ada964273ea4b" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="74c726528d7df8f2bb030823ea7fd8ef" name="AGREEDSTARTDATE" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="6d84a09c8e3ee2425b64831a0dc7e1fa" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="d476ed51241d490984b7835fae03d5e7" name="CLOSINGDATE" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="c0b90c8c2ac4d3ef17ca642c9df555b3" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="53d905df62fdc040a1b9de299d6417ca" name="SEGREGATIONTYPE" type="NVARCHAR" nullable="true" length="10">
+        <annotations xmi:id="b93e29a63f11973e91f80dcc3c46f057" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="73f2a1a38d0a075b8dba5d9c8c3c91bc" name="CURRENCY3" type="NVARCHAR" nullable="true" length="3">
+        <annotations xmi:id="24abb3f3a56d237081a53cd988e0ac52" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="dbb71ddf6eee69c1d2531b632cfe92a6" name="ACCOUNTOPENINGDATE3" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="8be40b0836c5be12c08eaef413aa4ec3" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="f777cb0aeff85d32f9fa9b859fbffba0" name="BUSINESSPARTNER_1.BUSINESSPARTNERID2" type="NVARCHAR" nullable="true" length="64">
+      </attributes>
+    </inputs>
+  </nodes>
+</flowgraph:ContainerNode>

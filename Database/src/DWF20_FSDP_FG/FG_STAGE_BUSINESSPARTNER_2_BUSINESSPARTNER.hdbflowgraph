@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="bda1c0da0eedd2495dc1cb8f7a0958d5" name="FG_STAGE_BUSINESSPARTNER_2_BUSINESSPARTNER" runtimeBehavior="BATCH_TASK">
+  <annotations key="sap.afm.layout" xmi:id="fd8dedd24baa792b64e51f1cb6672093">
+    <annotations xmi:id="e2ab21a75bab80f01590efa50a788c75" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="0f2e4a28fdeee5c8ab7ee7abae764195" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="9847ff95f2596672b06abe4ae578247c" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="f5df411031e0dece9d19f700cbea59f7" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="ac745d4b89dfec402c344f32e7eebf71" key="sap.afm.palette">
+    <annotations xmi:id="09a75ae81de16653350dbd24fd5971c3" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="ad09f7d95b3b0aa09236e376f5f4126d" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="7713227e1b8231ae33dad730a321bf92" key="sap.afm.nodeInputs">
+  </annotations>
+  <annotations xmi:id="6ab162b4439993d84c0571bc7669991e" key="sap.afm.nodeOutputs">
+  </annotations>
+  <tableMappings xmi:id="7cb9d89803d3a9921376588874d365a5" source="f0dbb6d232ac2fa88c572ab98a6b84d6" target="cfa8133ccaa4d75d6f16672575bb84e8">
+    <attributeMappings xmi:id="aaae13c025e3207b2de6b1abc3d4ebae" source="04b3f9f4c8c5a598c01f1a967463643c" target="12d3367c31477cb43fcd34ff36d775ee">
+    </attributeMappings>
+    <attributeMappings xmi:id="4609576ee8d074f51e059db2a330f73e" source="0c8005c668449bd8af4b8bd5a998aaaf" target="05271a32c4e02239b76ee6b223678ad6">
+    </attributeMappings>
+    <attributeMappings xmi:id="08754aebc30ecf4301bcb7524731da4b" source="54037a5b7da888a46e60bc05b7fe26f9" target="48a29e7f869151f96441f5e9d41fd92d">
+    </attributeMappings>
+    <attributeMappings xmi:id="2daa00b5b7bddad13e32bce3a6e41c66" source="ed7e43cd335b1926ebf798e62439042e" target="cb472ccaa81b54287195d1a96f4b5d8a">
+    </attributeMappings>
+    <attributeMappings xmi:id="bae7d11d6de90df23938059a5b3ea1ea" source="1b7b438e6f0b0a50f38ad9ba234cc5b5" target="d1c8cb9c1451ef0758954bb073e76a63">
+    </attributeMappings>
+    <attributeMappings xmi:id="5ffbde353183eba7acd4d131f054a13a" source="0ef7ff4059656668c6d0d6350efb8615" target="1b5054272a6ba99e13ddd57de9f08c7a">
+    </attributeMappings>
+    <attributeMappings xmi:id="ba1bab904e53bb3f76a2a0c6c41d7000" source="da8bd4a68c7214ed3cc65b88ae8c4de2" target="68ac76f59f663437b59675ea9ec69b55">
+    </attributeMappings>
+    <attributeMappings xmi:id="b8a68057c727cb10ab7bb42df376aff6" source="a4bf70a79e278263e3f009b9837dbd9b" target="f0defc244ab3a02bb27de19754c9f814">
+    </attributeMappings>
+    <attributeMappings xmi:id="57b7bc0a615700797933a603ac9671d2" source="354c38e3539840768ea7cb615d707c23" target="888f6414f688c44af473d3aac62cd400">
+    </attributeMappings>
+    <attributeMappings xmi:id="ae38a96ae2d9bafc29c2eb7be0c2e7db" source="daed30e0dbcc00e11330e8d3e1f9dc59" target="66dc67ebc020fabcfd900f519d4f7139">
+    </attributeMappings>
+    <attributeMappings xmi:id="b0cb10d1ed80eeab619d437aa1462699" source="aca418093a74c80f111fa027c051763d" target="c3e27028ce74be37de7a86ab39e235be">
+    </attributeMappings>
+    <attributeMappings xmi:id="bef14745ae0e7b41d1d56c0dab7afba3" source="edd3aaa02a691cc0c427598ede1efe66" target="aaa9ee5d72661d832fc560b548c72d39">
+    </attributeMappings>
+    <attributeMappings xmi:id="2da83df56bc47ca4df3295310fb23d10" source="623b448e7fd5b2bd6bc22c782e35b2b4" target="5e6b73e9b06476fe322e2c526f5a13fe">
+    </attributeMappings>
+    <attributeMappings xmi:id="8e337d40d0e44eef6aa2b9caf93d33c9" source="e28320c8101977576b1417002d5781c8" target="0b2774c8b7be4ee0b83308e8060e6f20">
+    </attributeMappings>
+    <attributeMappings xmi:id="f022b060a8c1b7c75c8ff2a5c8224679" source="769abae823fd95652414ca9e6229779b" target="45a2434a35f416e59b3a140e167086e0">
+    </attributeMappings>
+  </tableMappings>
+  <nodes xmi:id="195b53a99634403c5062c00145d127f5" name="DataSource" catalogObjectName="DWF20_FSDP_SOURCEDATA::STAGE_BUSINESSPARTNER" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN">
+    <annotations key="sap.afm.layout" xmi:id="ad1bee122f5bd4e79b7039001ec2f8fa">
+      <annotations xmi:id="877d24596c5c8b324fc0bca2452562c9" key="x" value="132">
+      </annotations>
+      <annotations xmi:id="bdcb5d91416f2740280f951c63c0b8f7" key="y" value="105">
+      </annotations>
+      <annotations xmi:id="68a7f4054e8b9caa905b2c96fa9c05a2" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="8c93d80962aa2a1acaa7c73024e49418" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="9c038be2f2154fbd48626a776bc0a937" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="0e25786138f2ba0d13a5a36795128eb1" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="495a88e546dce1560c73bb8f3732697d" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="eef8a2137db840fb7e0358752acaa88e" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="bdf356bea8645725db7db878552503df" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="272ae80116cb1972852b13b6b386fc5e" key="columns" value="[{&quot;name&quot;:&quot;BUSINESSPARTNERID2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;FIRSTCONTACTDATE2&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNERCATEGORY2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GIVENNAMES&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;LASTNAME&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CONSULTATION&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GENDER&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:6,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;NAMEATBIRTH&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:100,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;DATEOFBIRTH&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;PLACEOFBIRTH&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;MARITALSTATUS&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;EDUCATIONLEVEL&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ISHOMEOWNER&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;NUMBERHOUSEHOLDMEMBERS&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CHILDRENATHOMEINDICATOR&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <outputs xmi:id="f0dbb6d232ac2fa88c572ab98a6b84d6" name="DataSource">
+      <attributes xmi:id="04b3f9f4c8c5a598c01f1a967463643c" name="BUSINESSPARTNERID2" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="598b2f2279dcffce36dcb014818be604" key="sap.im.primaryKey" value="true"/>
+      </attributes>
+      <attributes xmi:id="0c8005c668449bd8af4b8bd5a998aaaf" name="FIRSTCONTACTDATE2" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="54037a5b7da888a46e60bc05b7fe26f9" name="BUSINESSPARTNERCATEGORY2" type="NVARCHAR" nullable="true" length="20">
+      </attributes>
+      <attributes xmi:id="ed7e43cd335b1926ebf798e62439042e" name="GIVENNAMES" type="NVARCHAR" nullable="true" length="60">
+      </attributes>
+      <attributes xmi:id="1b7b438e6f0b0a50f38ad9ba234cc5b5" name="LASTNAME" type="NVARCHAR" nullable="true" length="60">
+      </attributes>
+      <attributes xmi:id="0ef7ff4059656668c6d0d6350efb8615" name="CONSULTATION" type="NVARCHAR" nullable="true" length="40">
+      </attributes>
+      <attributes xmi:id="da8bd4a68c7214ed3cc65b88ae8c4de2" name="GENDER" type="NVARCHAR" nullable="true" length="6">
+      </attributes>
+      <attributes xmi:id="a4bf70a79e278263e3f009b9837dbd9b" name="NAMEATBIRTH" type="NVARCHAR" nullable="true" length="100">
+      </attributes>
+      <attributes xmi:id="354c38e3539840768ea7cb615d707c23" name="DATEOFBIRTH" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="daed30e0dbcc00e11330e8d3e1f9dc59" name="PLACEOFBIRTH" type="NVARCHAR" nullable="true" length="60">
+      </attributes>
+      <attributes xmi:id="aca418093a74c80f111fa027c051763d" name="MARITALSTATUS" type="NVARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="edd3aaa02a691cc0c427598ede1efe66" name="EDUCATIONLEVEL" type="NVARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="623b448e7fd5b2bd6bc22c782e35b2b4" name="ISHOMEOWNER" type="INTEGER" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="e28320c8101977576b1417002d5781c8" name="NUMBERHOUSEHOLDMEMBERS" type="INTEGER" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="769abae823fd95652414ca9e6229779b" name="CHILDRENATHOMEINDICATOR" type="INTEGER" nullable="true" length="10">
+      </attributes>
+    </outputs>
+  </nodes>
+  <nodes xmi:id="863abda05b63592d015ecb7409c48caf" name="DataTarget" catalogObjectName="DWF20_FSDP::BUSINESSPARTNER" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN" truncateTable="true">
+    <annotations key="sap.afm.layout" xmi:id="dd10f38d65590222270524456c869b4e">
+      <annotations xmi:id="ecadc473a6b10a00813d75daa9f7808c" key="x" value="526">
+      </annotations>
+      <annotations xmi:id="b2f7dc7cb937683c35b8693007c19447" key="y" value="163">
+      </annotations>
+      <annotations xmi:id="3fc9c0b0e8090b8124883c72b7f94501" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="38a0be8b1e5a27f9f96b135d0edfae4f" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="8d2c95762962801258f4b8ad325e94cf" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="dc02d60acbcaaab4a723ab27cb8e6381" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="8ae28b6fd7d156071aa9969bd1761b33" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="bfd9c8f17d859e8466237484347b0ee6" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="9f687abb42e3151a1952843b38270ee2" key="sap.afm.displayName" value="Data Target">
+    </annotations>
+    <annotations xmi:id="fb392a281f4e68cac14f93d857833734" key="columns" value="[{&quot;name&quot;:&quot;BUSINESSPARTNERID2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;FIRSTCONTACTDATE2&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;BUSINESSPARTNERCATEGORY2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:20,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GIVENNAMES&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;LASTNAME&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CONSULTATION&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;GENDER&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:6,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;NAMEATBIRTH&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:100,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;DATEOFBIRTH&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;PLACEOFBIRTH&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:60,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;MARITALSTATUS&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;EDUCATIONLEVEL&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ISHOMEOWNER&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;NUMBERHOUSEHOLDMEMBERS&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CHILDRENATHOMEINDICATOR&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <inputs xmi:id="cfa8133ccaa4d75d6f16672575bb84e8" name="DataTarget">
+      <attributes xmi:id="12d3367c31477cb43fcd34ff36d775ee" name="BUSINESSPARTNERID2" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="30677433da2ecd98b7996bec5bb0aab8" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="05271a32c4e02239b76ee6b223678ad6" name="FIRSTCONTACTDATE2" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="1ff31ae823cf265a09b1573fc9cd02ed" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="48a29e7f869151f96441f5e9d41fd92d" name="BUSINESSPARTNERCATEGORY2" type="NVARCHAR" nullable="true" length="20">
+        <annotations xmi:id="104a103178b70a9cd1fd0d8e8876355a" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="cb472ccaa81b54287195d1a96f4b5d8a" name="GIVENNAMES" type="NVARCHAR" nullable="true" length="60">
+        <annotations xmi:id="966acae47e0ab3ae04bd3270933d24fb" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="d1c8cb9c1451ef0758954bb073e76a63" name="LASTNAME" type="NVARCHAR" nullable="true" length="60">
+        <annotations xmi:id="3aa659566efef56849f72848dd5784f9" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="1b5054272a6ba99e13ddd57de9f08c7a" name="CONSULTATION" type="NVARCHAR" nullable="true" length="40">
+        <annotations xmi:id="2d640cfebfa62491be9766c6704085a8" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="68ac76f59f663437b59675ea9ec69b55" name="GENDER" type="NVARCHAR" nullable="true" length="6">
+        <annotations xmi:id="69cd98cce520996ecd1b8a1f8e9b867b" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="f0defc244ab3a02bb27de19754c9f814" name="NAMEATBIRTH" type="NVARCHAR" nullable="true" length="100">
+        <annotations xmi:id="7aee5d4abd8e2788b8492f1302d6e869" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="888f6414f688c44af473d3aac62cd400" name="DATEOFBIRTH" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="8a4317b23a72ccce511e52c8aa7504f4" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="66dc67ebc020fabcfd900f519d4f7139" name="PLACEOFBIRTH" type="NVARCHAR" nullable="true" length="60">
+        <annotations xmi:id="4268926ea4805dcd6cfa26604283c166" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="c3e27028ce74be37de7a86ab39e235be" name="MARITALSTATUS" type="NVARCHAR" nullable="true" length="10">
+        <annotations xmi:id="0acff9c827c03b8e1e6b0c8762861f37" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="aaa9ee5d72661d832fc560b548c72d39" name="EDUCATIONLEVEL" type="NVARCHAR" nullable="true" length="10">
+        <annotations xmi:id="90733eb2bb9bee4055fdf593a36f2e81" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="5e6b73e9b06476fe322e2c526f5a13fe" name="ISHOMEOWNER" type="INTEGER" nullable="true" length="10">
+        <annotations xmi:id="cb62266aecbd7457924957dbed73e768" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="0b2774c8b7be4ee0b83308e8060e6f20" name="NUMBERHOUSEHOLDMEMBERS" type="INTEGER" nullable="true" length="10">
+        <annotations xmi:id="4fc1d68d8b3b0f03dbed96a6c7e9308d" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="45a2434a35f416e59b3a140e167086e0" name="CHILDRENATHOMEINDICATOR" type="INTEGER" nullable="true" length="10">
+        <annotations xmi:id="497600b83a2c494125477d2382ebfff1" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+    </inputs>
+  </nodes>
+</flowgraph:ContainerNode>

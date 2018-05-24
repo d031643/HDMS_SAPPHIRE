@@ -1,0 +1,88 @@
+_schema-version: '2.0'
+ID: HDMS_SAPPHIRE
+description: HDMS_SAPPHIRE
+version: 0.0.1
+
+modules:
+ - name:  HDMS_SAPPHIRE-DWF
+   type: dwf
+#   parameters:
+#      app-name: HDMS_SAPPHIRE-DWF
+   path: DWF
+   requires:
+#      - name: HDMS_SAPPHIRE-uaa
+      - name: HDMS_SAPPHIRE-dws
+   properties:
+     memory: 256M
+
+ - name: HDMS_SAPPHIRE-Backend
+   type: nodejs
+#   parameters:
+#      app-name: HDMS_SAPPHIRE-Backend
+   path: Backend
+   requires:
+#      - name: HDMS_SAPPHIRE-uaa
+      - name: HDMS_SAPPHIRE-container
+      - name: HDMS_SAPPHIRE-dws
+   properties:
+     memory: 512M
+     API_END_POINT: "${xs-api-url}"
+#     SAP_JWT_TRUST_ACL: "[{\"clientid\":\"*\",\"identityzone\":\"*\"}]"
+   provides:
+    - name:  HDMS_SAPPHIRE-Backend
+      properties:
+       service_url: ${default-url}
+
+ - name: HDMS_SAPPHIRE-Database
+   type: hdb
+#   parameters:
+#      app-name: HDMS_SAPPHIRE-Database
+   path: Database
+   requires:
+    - name: HDMS_SAPPHIRE-container
+   properties:
+     memory: 256M
+     HDI_DEPLOY_OPTIONS: { "auto_undeploy": true }
+
+resources:
+# - name: HDMS_SAPPHIRE-uaa
+#   type: com.sap.xs.uaa
+#   parameters:
+#     service-name: HDMS_SAPPHIRE-uaa
+#     service-plan: space
+#     config:
+#         xsappname: HDMS_SAPPHIRE
+#         scopes:
+#          - name: $XSAPPNAME.TOE
+#            description: access for TOE
+#            grant-as-authority-to-apps:
+#             - dwf-toe
+#             - dwf-runtime
+#            granted-apps:
+#             - dwf-toe
+#             - dwf-runtime
+#         authorities:
+#          - $ACCEPT_GRANTED_AUTHORITIES
+#         role-templates:
+#           - name: User
+#             description: Access API
+#             scope-references:
+#              - $XSAPPNAME.TOE
+
+ - name: HDMS_SAPPHIRE-dws
+   properties:
+      dwf-edw-client-name: ${service-name}
+#      dwf-edw-client-name: HDMS_SAPPHIRE-dws
+#   parameters:
+#      service-name: HDMS_SAPPHIRE-dws
+   type: com.sap.xs.dwf-edw-client
+ - name: HDMS_SAPPHIRE-container
+   properties:
+      hdi-container-name: ${service-name}
+#      hdi-container-name: HDMS_SAPPHIRE-container
+#   parameters:
+#      service-name: HDMS_SAPPHIRE-container
+   type: com.sap.xs.hdi-container
+   parameters:
+     service-keys:
+     - name: dwf-monitor

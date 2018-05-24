@@ -1,0 +1,32 @@
+{ 
+  "format_version" : 1,
+  "imports" : [
+    {
+      "target_table" : "DWF20_FSDP_SOURCEDATA::STAGE_CARDISSUE",
+      "source_data" : { 
+        "data_type" : "CSV", 
+        "file_name" : "DWF20_FSDP_SOURCEDATA::STAGE_CARDISSUE.csv",
+        "has_header" : true,
+        "type_config" : {
+          "delimiter" : ";",
+          "do_quote"  : true
+        }
+      },
+      "import_settings" : { 
+        "import_columns" : [ 
+       "FIN_FINANCIALCONTRACTID",
+	   "FIN_SOURCESYSTEM",
+	   "SEQUENCENUMBER3",
+	   "BUSINESSPARTNERID2",
+	   "ISMAINCARD2",
+	   "CARDSTATUS2",
+	   "APPLICATIONDATE2",
+	   "APPROVALDATE2",
+	   "ISSUEDATE2",
+	   "DEBITCARDAGREEMENT_1",
+	   "BUSINESSPARTNER_1"                        
+        ]
+      }
+    }
+ ]
+}

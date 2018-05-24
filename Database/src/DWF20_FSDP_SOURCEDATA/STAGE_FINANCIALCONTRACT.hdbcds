@@ -1,0 +1,25 @@
+namespace DWF20_FSDP_SOURCEDATA;
+
+using DWF20_FSDP :: FINANCIALCONTRACT;
+
+entity "STAGE_FINANCIALCONTRACT" {
+    key "FINANCIALCONTRACTID"      : String(64) not null;
+        "SOURCESYSTEM"             : String(40) not null;
+        "BUSINESSPARTNERID2"       : String(64) not null;
+        "DESCRIPTION"              : LargeString;
+        "COMPANYROLE"              : String(20);
+        "COUNTERPARTYROLE"         : String(20);
+        "GOVERNINGLAWCOUNTRY"      : String(3);
+        "SIGNINGDATE"              : LocalDate;
+        "BANKINGBOOKORTRADINGBOOK" : String(10);
+        "ASSOCIATEDPROJECT"        : String(100);
+        "AGREEDSTARTDATE"          : LocalDate;
+        "CLOSINGDATE"              : LocalDate;
+        "SEGREGATIONTYPE"          : String(10);
+        "CURRENCY3"                : String(3);
+        "ACCOUNTOPENINGDATE3"      : LocalDate;
+        "BUSINESSPARTNER"          : String(64);
+}
+technical configuration {
+    column store;
+};

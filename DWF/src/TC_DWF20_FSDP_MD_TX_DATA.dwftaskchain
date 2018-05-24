@@ -1,0 +1,148 @@
+{
+  "taskList": {
+    "1": {
+      "inline": {
+        "type": "START",
+        "taskGroup": "com.sap.dwf.toe.executionControl"
+      }
+    },
+    "2": {
+      "inline": {
+        "type": "executeFlowGraph",
+        "taskGroup": "hanaNative",
+        "description": "BusinessPartner",
+        "parameterValues": [
+          {
+            "id": "flowGraphName",
+            "value": "DWF20_FSDP_FG::FG_STAGE_BUSINESSPARTNER_2_BUSINESSPARTNER"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "1",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "3": {
+      "inline": {
+        "type": "executeFlowGraph",
+        "taskGroup": "hanaNative",
+        "description": "CardIssue",
+        "parameterValues": [
+          {
+            "id": "flowGraphName",
+            "value": "DWF20_FSDP_FG::FG_STAGE_CARDISSUE_2_CARDISSUE"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "1",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "4": {
+      "inline": {
+        "type": "executeFlowGraph",
+        "taskGroup": "hanaNative",
+        "description": "Card",
+        "parameterValues": [
+          {
+            "id": "flowGraphName",
+            "value": "DWF20_FSDP_FG::FG_STAGE_CARD_2_CARD"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "1",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "5": {
+      "inline": {
+        "type": "executeFlowGraph",
+        "taskGroup": "hanaNative",
+        "description": "FinancialContract",
+        "parameterValues": [
+          {
+            "id": "flowGraphName",
+            "value": "DWF20_FSDP_FG::FG_STAGE_FINANCIALCONTRACT_2_FINANCIALCONTRACT"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "1",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "6": {
+      "inline": {
+        "type": "SYNC",
+        "taskGroup": "com.sap.dwf.toe.executionControl"
+      },
+      "preconditions": [
+        {
+          "from": "2",
+          "status": "OK"
+        },
+        {
+          "from": "3",
+          "status": "OK"
+        },
+        {
+          "from": "4",
+          "status": "OK"
+        },
+        {
+          "from": "5",
+          "status": "OK"
+        }
+      ]
+    },
+    "7": {
+      "inline": {
+        "type": "executeFlowGraph",
+        "taskGroup": "hanaNative",
+        "description": "NDSO_BusinessTx",
+        "parameterValues": [
+          {
+            "id": "flowGraphName",
+            "value": "DWF20_FSDP_FG::FG_STAGE_BUSINESS_TX_NDSO_BUSINESS_TX"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "6",
+          "status": "NEUTRAL"
+        }
+      ]
+    },
+    "8": {
+      "inline": {
+        "type": "activate",
+        "taskGroup": "ndso",
+        "description": "NDSO_BusinessTx",
+        "parameterValues": [
+          {
+            "id": "dataStoreName",
+            "value": "DWF20_FSDP::NDSO_BUSINESSTRANSACTION.NDSO_BUSINESSTRANSACTION"
+          }
+        ]
+      },
+      "preconditions": [
+        {
+          "from": "7",
+          "status": "OK"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+namespace DWF20_FSDP;
+
+/*===============================================
+   Context: SAPPHIRE_FSDP_HDI
+===============================================*/
+context "SAPPHIRE_FSDP_HDI" {
+    type "Amount" : Decimal(34, 6);
+    type "Country" : String(3);
+    type "Currency" : String(3);
+    type "ID" : String(64);
+    type "Name" : String(100);
+};

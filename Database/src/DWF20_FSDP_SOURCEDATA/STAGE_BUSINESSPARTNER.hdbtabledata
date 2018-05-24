@@ -1,0 +1,36 @@
+{ 
+  "format_version" : 1,
+  "imports" : [
+    {
+      "target_table" : "DWF20_FSDP_SOURCEDATA::STAGE_BUSINESSPARTNER",
+      "source_data" : { 
+        "data_type" : "CSV", 
+        "file_name" : "DWF20_FSDP_SOURCEDATA::STAGE_BUSINESSPARTNER.csv",
+        "has_header" : true,
+        "type_config" : {
+          "delimiter" : ";",
+          "do_quote"  : true
+        }
+      },
+      "import_settings" : { 
+        "import_columns" : [
+       "BUSINESSPARTNERID2",
+	   "FIRSTCONTACTDATE2",
+	   "BUSINESSPARTNERCATEGORY2",
+	   "GIVENNAMES",
+	   "LASTNAME",
+	   "CONSULTATION",
+	   "GENDER",
+	   "NAMEATBIRTH",
+	   "DATEOFBIRTH",
+	   "PLACEOFBIRTH",
+	   "MARITALSTATUS",
+	   "EDUCATIONLEVEL",
+	   "ISHOMEOWNER",
+	   "NUMBERHOUSEHOLDMEMBERS",
+	   "CHILDRENATHOMEINDICATOR"        
+        ]
+      }
+    }
+ ]
+}

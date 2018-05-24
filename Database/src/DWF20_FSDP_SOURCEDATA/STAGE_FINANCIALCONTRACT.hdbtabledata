@@ -1,0 +1,37 @@
+{ 
+  "format_version" : 1,
+  "imports" : [
+    {
+      "target_table" : "DWF20_FSDP_SOURCEDATA::STAGE_FINANCIALCONTRACT",
+      "source_data" : { 
+        "data_type" : "CSV", 
+        "file_name" : "DWF20_FSDP_SOURCEDATA::STAGE_FINANCIALCONTRACT.csv",
+        "has_header" : true,
+        "type_config" : {
+          "delimiter" : ";",
+          "do_quote"  : true
+        }
+      },
+      "import_settings" : { 
+        "import_columns" : [ 
+        "FINANCIALCONTRACTID",
+        "SOURCESYSTEM",
+        "BUSINESSPARTNERID2",
+        "DESCRIPTION",
+        "COMPANYROLE",
+        "COUNTERPARTYROLE",
+        "GOVERNINGLAWCOUNTRY",
+        "SIGNINGDATE",
+        "BANKINGBOOKORTRADINGBOOK",
+        "ASSOCIATEDPROJECT",
+        "AGREEDSTARTDATE",
+        "CLOSINGDATE" ,
+        "SEGREGATIONTYPE",
+        "CURRENCY3",
+        "ACCOUNTOPENINGDATE3",        
+        "BUSINESSPARTNER"
+        ]
+      }
+    }
+ ]
+}

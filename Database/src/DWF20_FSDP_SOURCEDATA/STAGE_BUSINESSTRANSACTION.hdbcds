@@ -1,0 +1,53 @@
+namespace DWF20_FSDP_SOURCEDATA;
+
+using DWF20_FSDP :: FINANCIALCONTRACT;
+
+entity "STAGE_BUSINESSTRANSACTION" {
+    key "BUSINESSTRANSACTIONIDE"               : String(64)     not null;
+        "SOURCESYSTEM2"                        : String(40)     not null;
+        "FIN_FINANCIALCONTRACTID"              : String(64)     not null;
+        "FIN_SOURCESYSTEM"                     : String(40)     not null;
+        "SEQUENCENUMBER3"                      : String(40)     not null;
+        "CARDISSUE"                            : String(100)    not null;
+        "POSTERMINALID2"                       : String(100)    not null;
+        "TRANSACTIONPLACE2"                    : String(100)    not null;
+        "TRANSACTIONCOUNTRY2"                  : String(3)      not null;
+        "LATITUDE3"                            : Decimal(9, 6)  not null;
+        "LONGITUDE3"                           : Decimal(9, 6)  not null;
+        "AUTHORIZATIONCODE2"                   : String(100)    not null;
+        "CHARGETYPE2"                          : String(40)     not null;
+        "MERCHANTDISCOUNT2"                    : Decimal(34, 6) not null;
+        "MERCHANTDISCOUNTCURRENCY2"            : String(3)      not null;
+        "BUSINESSTRANSACTIONITEM_1"            : String(64)     not null;
+        "CAR_BUSINESSTRANSACTIONID"            : String(64)     not null;
+        "CAR_SOURCESYSTEM2"                    : String(40)     not null;
+        "BUSINESSTRANSACTIONITEMNUMBER"        : Integer        not null;
+        "TRANSACTIONCODE"                      : String(40)     not null;
+        "TRANSACTIONAMOUNT"                    : Decimal(34, 6) not null;
+        "TRANSACTIONAMOUNTCURRENCY"            : String(3)      not null;
+        "AMOUNTINACCOUNTCURRENCY"              : Decimal(34, 6) not null;
+        "AMOUNTINREFERENCECURRENCY"            : Decimal(34, 6) not null;
+        "REFERENCECURRENCY"                    : String(3)      not null;
+        "USEDEXCHANGERATETRANSACTIONREFERENCE" : Decimal(34, 6) not null;
+        "NOMINALAMOUNT"                        : Decimal(34, 6) not null;
+        "NOMINALAMOUNTCURRENCY"                : String(3)      not null;
+        "POSTINGDIRECTION"                     : String(1)      not null;
+        "ENDUTCDateOFINTERESTPERIOD"           : LocalDate      not null;
+        "RECONCILIATIONID"                     : String(100)    not null;
+        "QUANTITY"                             : Decimal(34, 6) not null;
+        "UNIT"                                 : String(10)     not null;
+        "SOURCESYSTEM"                         : String(40)     not null;
+        "BUS_BUSINESSTRANSACTIONID"            : String(64)     not null;
+        "BUS_SOURCESYSTEM2"                    : String(40)     not null;
+        "BUS_BUSINESSTRANSACTIONID2"           : String(64)     not null;
+        "BUS_SOURCESYSTEM3"                    : String(40)     not null;
+        "POSTINGUTCDateEXTERNALLYPROVIDED"     : LocalDate      not null;
+        "REVERSALINDICATOR"                    : Integer        not null;
+        "TRANSACTIONUTCDate"                   : LocalDate      not null;
+        "VALUEUTCDate"                         : LocalDate      not null;
+        "LOTID"                                : Integer        not null;
+        "FINANCIALCONTRACTID"                  : String(64)     not null;
+}
+technical configuration {
+    column store;
+};

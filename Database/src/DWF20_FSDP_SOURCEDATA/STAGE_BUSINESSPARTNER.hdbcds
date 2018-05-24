@@ -1,0 +1,22 @@
+namespace DWF20_FSDP_SOURCEDATA;
+
+entity "STAGE_BUSINESSPARTNER" {
+    key "BUSINESSPARTNERID2"       : String(64) not null;
+        "FIRSTCONTACTDATE2"        : LocalDate;
+        "BUSINESSPARTNERCATEGORY2" : String(20);
+        "GIVENNAMES"               : String(60);
+        "LASTNAME"                 : String(60);
+        "CONSULTATION"             : String(40);
+        "GENDER"                   : String(6);
+        "NAMEATBIRTH"              : String(100);
+        "DATEOFBIRTH"              : LocalDate;
+        "PLACEOFBIRTH"             : String(60);
+        "MARITALSTATUS"            : String(10);
+        "EDUCATIONLEVEL"           : String(10);
+        "ISHOMEOWNER"              : Integer;
+        "NUMBERHOUSEHOLDMEMBERS"   : Integer;
+        "CHILDRENATHOMEINDICATOR"  : Integer;
+}
+technical configuration {
+    column store;
+};

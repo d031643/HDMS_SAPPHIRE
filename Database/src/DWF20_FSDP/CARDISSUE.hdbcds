@@ -1,0 +1,21 @@
+namespace DWF20_FSDP;
+
+using DWF20_FSDP :: DEBITCARDAGREEMENT;
+using DWF20_FSDP :: BUSINESSPARTNER;
+
+entity "CARDISSUE" {
+    key "FIN_FINANCIALCONTRACTID" : String(64) not null;
+        "FIN_SOURCESYSTEM"        : String(40) not null;
+        "SEQUENCENUMBER3"         : Integer    not null;
+        "BUSINESSPARTNERID2"      : String(64) not null;
+        "ISMAINCARD2"             : Integer;
+        "CARDSTATUS2"             : String(100);
+        "APPLICATIONDATE2"        : LocalDate;
+        "APPROVALDATE2"           : LocalDate;
+        "ISSUEDATE2"              : LocalDate;
+        "DEBITCARDAGREEMENT_1"    : association to "DEBITCARDAGREEMENT";
+        "BUSINESSPARTNER_1"       : association to "BUSINESSPARTNER";
+}
+technical configuration {
+    column store;
+};

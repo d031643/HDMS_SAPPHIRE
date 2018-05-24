@@ -1,0 +1,354 @@
+
+
+namespace DWF20_FSDP;
+
+using DataWarehouse.DataStore::Structures.inboundQueueKey;
+using DataWarehouse.DataStore::Structures.inboundQueueAttributes;
+using DataWarehouse.DataStore::Structures.changeLogKey;
+using DataWarehouse.DataStore::Structures.changeLogAttributes;
+using DataWarehouse.DataStore::Structures.operationHistoryKey;
+using DataWarehouse.DataStore::Structures.operationHistoryAttributes;
+using DataWarehouse.DataStore::Structures.aggregationHistoryKey;
+using DataWarehouse.DataStore::Structures.aggregationHistoryAttributes;
+using DataWarehouse.DataStore::Structures.affectedRequestsKey;
+using DataWarehouse.DataStore::Structures.logMessagesKey;
+using DataWarehouse.DataStore::Structures.logMessagesAttributes;
+using DataWarehouse.DataStore::Structures.subscribersKey;
+using DataWarehouse.DataStore::Structures.subscribersAttributes;
+using DataWarehouse.DataStore::Structures.runningOperationsKey;
+using DataWarehouse.DataStore::Structures.idGeneratorKey;
+using DataWarehouse.DataStore::Structures.idGeneratorAttributes;
+using DataWarehouse.DataStore::Annotations as DataStore;
+
+context "NDSO_BUSINESSTRANSACTION" {
+
+@DataStore.isDSO: true
+@DataStore.entity.activeData: 'active_data'
+@DataStore.entity.activationQueue: ['Inbound_queue_1']
+@DataStore.entity.changeLog: 'change_log'
+@DataStore.entity.operationHistory: 'operationHistory'
+@DataStore.entity.aggregationHistory: 'aggregationHistory'
+@DataStore.entity.logMessages: 'logMessages'
+@DataStore.entity.affectedRequests: 'affectedRequests'
+@DataStore.entity.subscribers: 'subscribers'
+@DataStore.entity.runningOperations: 'runningOperations'
+@DataStore.entity.idGenerator: 'idGen'
+@DataStore.computeChecksum: true
+@DataStore.snapshotSupport: false
+context "NDSO_BUSINESSTRANSACTION" {
+@DataStore.entityCategory: #ACTIVE_DATA
+entity active_data { 
+	@DataStore.aggregation: #MOV
+   key "BUSINESSTRANSACTIONIDE":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "FIN_FINANCIALCONTRACTID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "FIN_SOURCESYSTEM":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "SEQUENCENUMBER3":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "CARDISSUE":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "POSTERMINALID2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONPLACE2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONCOUNTRY2":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "LATITUDE3":  Decimal(9, 6) not null;
+	@DataStore.aggregation: #MOV
+   "LONGITUDE3":  Decimal(9, 6) not null;
+	@DataStore.aggregation: #MOV
+   "AUTHORIZATIONCODE2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "CHARGETYPE2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNT2":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNTCURRENCY2":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEM_1":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "CAR_BUSINESSTRANSACTIONID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "CAR_SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEMNUMBER":  Integer not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONCODE":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNT":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNTCURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "AMOUNTINACCOUNTCURRENCY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "AMOUNTINREFERENCECURRENCY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "REFERENCECURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "USEDEXCHANGERATETRANSACTIONREFERENCE":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "NOMINALAMOUNT":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "NOMINALAMOUNTCURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "POSTINGDIRECTION":  String(1) not null;
+	@DataStore.aggregation: #MOV
+   "ENDDATEOFINTERESTPERIOD":  LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "RECONCILIATIONID":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "QUANTITY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "UNIT":  String(10) not null;
+	@DataStore.aggregation: #MOV
+   "SOURCESYSTEM":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID2":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM3":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "POSTINGDATEEXTERNALLYPROVIDED":  LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "REVERSALINDICATOR":  Integer not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONDATE": LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "VALUEDATE": LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "LOTID":  Integer not null; }
+	technical configuration {
+	    column  store; 
+	group name DSO_1 group type "sap.dwf.dso" group subtype ACTIVE;};
+
+@DataStore.entityCategory: #ACTIVATION_QUEUE
+entity Inbound_queue_1 {
+ key technicalKey : inboundQueueKey;
+ technicalAttributes : inboundQueueAttributes not null;
+   @DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONIDE":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "SOURCESYSTEM2":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "FIN_FINANCIALCONTRACTID":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "FIN_SOURCESYSTEM":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "SEQUENCENUMBER3":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "CARDISSUE":  String(100) not null;
+   @DataStore.aggregation: #MOV
+   "POSTERMINALID2":  String(100) not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONPLACE2":  String(100) not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONCOUNTRY2":  String(3) not null;
+   @DataStore.aggregation: #MOV
+   "LATITUDE3":  Decimal(9, 6) not null;
+   @DataStore.aggregation: #MOV
+   "LONGITUDE3":  Decimal(9, 6) not null;
+   @DataStore.aggregation: #MOV
+   "AUTHORIZATIONCODE2":  String(100) not null;
+   @DataStore.aggregation: #MOV
+   "CHARGETYPE2":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNT2":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNTCURRENCY2":  String(3) not null;
+   @DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEM_1":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "CAR_BUSINESSTRANSACTIONID":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "CAR_SOURCESYSTEM2":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEMNUMBER":  Integer not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONCODE":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNT":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNTCURRENCY":  String(3) not null;
+   @DataStore.aggregation: #MOV
+   "AMOUNTINACCOUNTCURRENCY":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "AMOUNTINREFERENCECURRENCY":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "REFERENCECURRENCY":  String(3) not null;
+   @DataStore.aggregation: #MOV
+   "USEDEXCHANGERATETRANSACTIONREFERENCE":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "NOMINALAMOUNT":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "NOMINALAMOUNTCURRENCY":  String(3) not null;
+   @DataStore.aggregation: #MOV
+   "POSTINGDIRECTION":  String(1) not null;
+   @DataStore.aggregation: #MOV
+   "ENDDATEOFINTERESTPERIOD":  LocalDate not null default '2017-04-09';
+   @DataStore.aggregation: #MOV
+   "RECONCILIATIONID":  String(100) not null;
+   @DataStore.aggregation: #MOV
+   "QUANTITY":  Decimal(34, 6) not null;
+   @DataStore.aggregation: #MOV
+   "UNIT":  String(10) not null;
+   @DataStore.aggregation: #MOV
+   "SOURCESYSTEM":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM2":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID2":  String(64) not null;
+   @DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM3":  String(40) not null;
+   @DataStore.aggregation: #MOV
+   "POSTINGDATEEXTERNALLYPROVIDED": LocalDate not null default '2017-04-09'; 
+   @DataStore.aggregation: #MOV
+   "REVERSALINDICATOR":  Integer not null;
+   @DataStore.aggregation: #MOV
+   "TRANSACTIONDATE":  LocalDate not null default '2017-04-09';
+   @DataStore.aggregation: #MOV
+   "VALUEDATE":  LocalDate not null default '2017-04-09';
+   @DataStore.aggregation: #MOV
+   "LOTID":  Integer not null;
+ };
+
+@DataStore.entityCategory: #CHANGE_LOG
+entity change_log {
+ key technicalKey : changeLogKey;
+ technicalAttributes : changeLogAttributes not null;
+	@DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONIDE":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "FIN_FINANCIALCONTRACTID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "FIN_SOURCESYSTEM":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "SEQUENCENUMBER3":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "CARDISSUE":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "POSTERMINALID2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONPLACE2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONCOUNTRY2":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "LATITUDE3":  Decimal(9, 6) not null;
+	@DataStore.aggregation: #MOV
+   "LONGITUDE3":  Decimal(9, 6) not null;
+	@DataStore.aggregation: #MOV
+   "AUTHORIZATIONCODE2":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "CHARGETYPE2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNT2":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "MERCHANTDISCOUNTCURRENCY2":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEM_1":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "CAR_BUSINESSTRANSACTIONID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "CAR_SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUSINESSTRANSACTIONITEMNUMBER":  Integer not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONCODE":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNT":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "TRANSACTIONAMOUNTCURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "AMOUNTINACCOUNTCURRENCY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "AMOUNTINREFERENCECURRENCY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "REFERENCECURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "USEDEXCHANGERATETRANSACTIONREFERENCE":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "NOMINALAMOUNT":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "NOMINALAMOUNTCURRENCY":  String(3) not null;
+	@DataStore.aggregation: #MOV
+   "POSTINGDIRECTION":  String(1) not null;
+	@DataStore.aggregation: #MOV
+   "ENDDATEOFINTERESTPERIOD":  LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "RECONCILIATIONID":  String(100) not null;
+	@DataStore.aggregation: #MOV
+   "QUANTITY":  Decimal(34, 6) not null;
+	@DataStore.aggregation: #MOV
+   "UNIT":  String(10) not null;
+	@DataStore.aggregation: #MOV
+   "SOURCESYSTEM":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM2":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_BUSINESSTRANSACTIONID2":  String(64) not null;
+	@DataStore.aggregation: #MOV
+   "BUS_SOURCESYSTEM3":  String(40) not null;
+	@DataStore.aggregation: #MOV
+   "POSTINGDATEEXTERNALLYPROVIDED":  LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "REVERSALINDICATOR":  Integer not null;
+	@DataStore.aggregation: #MOV
+    "TRANSACTIONDATE" : LocalDate  not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "VALUEDATE":  LocalDate not null default '2017-04-09';
+	@DataStore.aggregation: #MOV
+   "LOTID":  Integer not null; };
+@DataStore.entityCategory: #OPERATION_HISTORY
+entity operationHistory {
+ key technicalKey : operationHistoryKey;
+ technicalAttributes : operationHistoryAttributes;
+};
+
+@DataStore.entityCategory: #AGGREGATION_HISTORY
+entity aggregationHistory {
+ key technicalKey : aggregationHistoryKey;
+ technicalAttributes : aggregationHistoryAttributes;
+};
+
+@DataStore.entityCategory: #AFFECTED_REQUESTS
+entity affectedRequests {
+ key technicalKey : affectedRequestsKey;
+};
+
+@DataStore.entityCategory: #LOG_MESSAGES
+entity logMessages {
+ key technicalKey : logMessagesKey;
+ technicalAttributes : logMessagesAttributes;
+};
+
+@DataStore.entityCategory: #SUBSCRIBERS
+entity subscribers {
+ key technicalKey : subscribersKey;
+ technicalAttributes : subscribersAttributes;
+};
+
+@DataStore.entityCategory: #RUNNING_OPERATIONS
+entity runningOperations {
+ key technicalKey : runningOperationsKey;
+};
+
+@DataStore.entityCategory: #ID_GENERATOR
+entity idGen {
+ key technicalKey : idGeneratorKey;
+ technicalAttributes : idGeneratorAttributes;
+};
+
+};
+};

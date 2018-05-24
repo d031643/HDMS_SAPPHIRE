@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="DWF20_FSDP::CV_CardTx" applyPrivilegeType="NONE" dataCategory="CUBE" dimensionType="" schemaVersion="3.0" defaultClient="$$client$$" outputViewType="Aggregation" calculationScenarioType="TREE_BASED" cacheInvalidationPeriod="DAILY" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_CardTx"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="DWF20_FSDP::FINANCIALCONTRACT">
+    <resourceUri>DWF20_FSDP::FINANCIALCONTRACT</resourceUri>
+  </DataSource>
+  <DataSource id="DWF20_FSDP::NDSO_BUSINESSTRANSACTION.NDSO_BUSINESSTRANSACTION.active_data">
+    <resourceUri>DWF20_FSDP::NDSO_BUSINESSTRANSACTION.NDSO_BUSINESSTRANSACTION.active_data</resourceUri>
+  </DataSource>
+  <DataSource id="DWF20_FSDP::BUSINESSPARTNER">
+    <resourceUri>DWF20_FSDP::BUSINESSPARTNER</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="rightOuter">
+    <viewAttributes>
+      <viewAttribute id="ACCOUNTOPENINGDATE3">
+        <descriptions defaultDescription="ACCOUNTOPENINGDATE3"/>
+      </viewAttribute>
+      <viewAttribute id="AGREEDSTARTDATE">
+        <descriptions defaultDescription="AGREEDSTARTDATE"/>
+      </viewAttribute>
+      <viewAttribute id="ASSOCIATEDPROJECT">
+        <descriptions defaultDescription="ASSOCIATEDPROJECT"/>
+      </viewAttribute>
+      <viewAttribute id="BANKINGBOOKORTRADINGBOOK">
+        <descriptions defaultDescription="BANKINGBOOKORTRADINGBOOK"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSPARTNERID2">
+        <descriptions defaultDescription="BUSINESSPARTNERID2"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSPARTNER_1_BUSINESSPARTNERID2">
+        <descriptions defaultDescription="BUSINESSPARTNER_1_BUSINESSPARTNERID2"/>
+      </viewAttribute>
+      <viewAttribute id="CLOSINGDATE">
+        <descriptions defaultDescription="CLOSINGDATE"/>
+      </viewAttribute>
+      <viewAttribute id="COMPANYROLE">
+        <descriptions defaultDescription="COMPANYROLE"/>
+      </viewAttribute>
+      <viewAttribute id="COUNTERPARTYROLE">
+        <descriptions defaultDescription="COUNTERPARTYROLE"/>
+      </viewAttribute>
+      <viewAttribute id="CURRENCY3">
+        <descriptions defaultDescription="CURRENCY3"/>
+      </viewAttribute>
+      <viewAttribute id="FINANCIALCONTRACTID">
+        <descriptions defaultDescription="FINANCIALCONTRACTID"/>
+      </viewAttribute>
+      <viewAttribute id="GOVERNINGLAWCOUNTRY">
+        <descriptions defaultDescription="GOVERNINGLAWCOUNTRY"/>
+      </viewAttribute>
+      <viewAttribute id="SEGREGATIONTYPE">
+        <descriptions defaultDescription="SEGREGATIONTYPE"/>
+      </viewAttribute>
+      <viewAttribute id="SIGNINGDATE">
+        <descriptions defaultDescription="SIGNINGDATE"/>
+      </viewAttribute>
+      <viewAttribute id="SOURCESYSTEM">
+        <descriptions defaultDescription="SOURCESYSTEM"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONPLACE2">
+        <descriptions defaultDescription="TRANSACTIONPLACE2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONCOUNTRY2">
+        <descriptions defaultDescription="TRANSACTIONCOUNTRY2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONAMOUNTCURRENCY">
+        <descriptions defaultDescription="TRANSACTIONAMOUNTCURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONAMOUNT" aggregationType="sum">
+        <descriptions defaultDescription="TRANSACTIONAMOUNT"/>
+      </viewAttribute>
+      <viewAttribute id="AMOUNTINACCOUNTCURRENCY" aggregationType="sum">
+        <descriptions defaultDescription="AMOUNTINACCOUNTCURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="AMOUNTINREFERENCECURRENCY" aggregationType="sum">
+        <descriptions defaultDescription="AMOUNTINREFERENCECURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="AUTHORIZATIONCODE2">
+        <descriptions defaultDescription="AUTHORIZATIONCODE2"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSTRANSACTIONIDE">
+        <descriptions defaultDescription="BUSINESSTRANSACTIONIDE"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSTRANSACTIONITEMNUMBER" aggregationType="sum">
+        <descriptions defaultDescription="BUSINESSTRANSACTIONITEMNUMBER"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSTRANSACTIONITEM_1">
+        <descriptions defaultDescription="BUSINESSTRANSACTIONITEM_1"/>
+      </viewAttribute>
+      <viewAttribute id="BUS_BUSINESSTRANSACTIONID">
+        <descriptions defaultDescription="BUS_BUSINESSTRANSACTIONID"/>
+      </viewAttribute>
+      <viewAttribute id="BUS_BUSINESSTRANSACTIONID2">
+        <descriptions defaultDescription="BUS_BUSINESSTRANSACTIONID2"/>
+      </viewAttribute>
+      <viewAttribute id="BUS_SOURCESYSTEM2">
+        <descriptions defaultDescription="BUS_SOURCESYSTEM2"/>
+      </viewAttribute>
+      <viewAttribute id="BUS_SOURCESYSTEM3">
+        <descriptions defaultDescription="BUS_SOURCESYSTEM3"/>
+      </viewAttribute>
+      <viewAttribute id="CARDISSUE">
+        <descriptions defaultDescription="CARDISSUE"/>
+      </viewAttribute>
+      <viewAttribute id="CAR_BUSINESSTRANSACTIONID">
+        <descriptions defaultDescription="CAR_BUSINESSTRANSACTIONID"/>
+      </viewAttribute>
+      <viewAttribute id="CAR_SOURCESYSTEM2">
+        <descriptions defaultDescription="CAR_SOURCESYSTEM2"/>
+      </viewAttribute>
+      <viewAttribute id="CHARGETYPE2">
+        <descriptions defaultDescription="CHARGETYPE2"/>
+      </viewAttribute>
+      <viewAttribute id="ENDDATEOFINTERESTPERIOD">
+        <descriptions defaultDescription="ENDDATEOFINTERESTPERIOD"/>
+      </viewAttribute>
+      <viewAttribute id="FIN_FINANCIALCONTRACTID">
+        <descriptions defaultDescription="FIN_FINANCIALCONTRACTID"/>
+      </viewAttribute>
+      <viewAttribute id="FIN_SOURCESYSTEM">
+        <descriptions defaultDescription="FIN_SOURCESYSTEM"/>
+      </viewAttribute>
+      <viewAttribute id="LATITUDE3" aggregationType="sum">
+        <descriptions defaultDescription="LATITUDE3"/>
+      </viewAttribute>
+      <viewAttribute id="LONGITUDE3" aggregationType="sum">
+        <descriptions defaultDescription="LONGITUDE3"/>
+      </viewAttribute>
+      <viewAttribute id="LOTID" aggregationType="sum">
+        <descriptions defaultDescription="LOTID"/>
+      </viewAttribute>
+      <viewAttribute id="MERCHANTDISCOUNT2" aggregationType="sum">
+        <descriptions defaultDescription="MERCHANTDISCOUNT2"/>
+      </viewAttribute>
+      <viewAttribute id="MERCHANTDISCOUNTCURRENCY2">
+        <descriptions defaultDescription="MERCHANTDISCOUNTCURRENCY2"/>
+      </viewAttribute>
+      <viewAttribute id="NOMINALAMOUNT" aggregationType="sum">
+        <descriptions defaultDescription="NOMINALAMOUNT"/>
+      </viewAttribute>
+      <viewAttribute id="NOMINALAMOUNTCURRENCY">
+        <descriptions defaultDescription="NOMINALAMOUNTCURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="POSTERMINALID2">
+        <descriptions defaultDescription="POSTERMINALID2"/>
+      </viewAttribute>
+      <viewAttribute id="POSTINGDATEEXTERNALLYPROVIDED">
+        <descriptions defaultDescription="POSTINGDATEEXTERNALLYPROVIDED"/>
+      </viewAttribute>
+      <viewAttribute id="POSTINGDIRECTION">
+        <descriptions defaultDescription="POSTINGDIRECTION"/>
+      </viewAttribute>
+      <viewAttribute id="QUANTITY" aggregationType="sum">
+        <descriptions defaultDescription="QUANTITY"/>
+      </viewAttribute>
+      <viewAttribute id="RECONCILIATIONID">
+        <descriptions defaultDescription="RECONCILIATIONID"/>
+      </viewAttribute>
+      <viewAttribute id="REFERENCECURRENCY">
+        <descriptions defaultDescription="REFERENCECURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="REVERSALINDICATOR" aggregationType="sum">
+        <descriptions defaultDescription="REVERSALINDICATOR"/>
+      </viewAttribute>
+      <viewAttribute id="SEQUENCENUMBER3">
+        <descriptions defaultDescription="SEQUENCENUMBER3"/>
+      </viewAttribute>
+      <viewAttribute id="SOURCESYSTEM_1">
+        <descriptions defaultDescription="SOURCESYSTEM_1"/>
+      </viewAttribute>
+      <viewAttribute id="SOURCESYSTEM2">
+        <descriptions defaultDescription="SOURCESYSTEM2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONCODE">
+        <descriptions defaultDescription="TRANSACTIONCODE"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONDATE">
+        <descriptions defaultDescription="TRANSACTIONDATE"/>
+      </viewAttribute>
+      <viewAttribute id="UNIT">
+        <descriptions defaultDescription="UNIT"/>
+      </viewAttribute>
+      <viewAttribute id="USEDEXCHANGERATETRANSACTIONREFERENCE" aggregationType="sum">
+        <descriptions defaultDescription="USEDEXCHANGERATETRANSACTIONREFERENCE"/>
+      </viewAttribute>
+      <viewAttribute id="VALUEDATE">
+        <descriptions defaultDescription="VALUEDATE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="DWF20_FSDP::FINANCIALCONTRACT">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ACCOUNTOPENINGDATE3" source="ACCOUNTOPENINGDATE3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AGREEDSTARTDATE" source="AGREEDSTARTDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ASSOCIATEDPROJECT" source="ASSOCIATEDPROJECT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BANKINGBOOKORTRADINGBOOK" source="BANKINGBOOKORTRADINGBOOK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSPARTNERID2" source="BUSINESSPARTNERID2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSPARTNER_1_BUSINESSPARTNERID2" source="BUSINESSPARTNER_1.BUSINESSPARTNERID2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CLOSINGDATE" source="CLOSINGDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="COMPANYROLE" source="COMPANYROLE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="COUNTERPARTYROLE" source="COUNTERPARTYROLE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CURRENCY3" source="CURRENCY3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FINANCIALCONTRACTID" source="FINANCIALCONTRACTID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GOVERNINGLAWCOUNTRY" source="GOVERNINGLAWCOUNTRY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SEGREGATIONTYPE" source="SEGREGATIONTYPE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SIGNINGDATE" source="SIGNINGDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SOURCESYSTEM" source="SOURCESYSTEM"/>
+    </input>
+    <input node="DWF20_FSDP::NDSO_BUSINESSTRANSACTION.NDSO_BUSINESSTRANSACTION.active_data">
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONPLACE2" source="TRANSACTIONPLACE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONCOUNTRY2" source="TRANSACTIONCOUNTRY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONAMOUNTCURRENCY" source="TRANSACTIONAMOUNTCURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONAMOUNT" source="TRANSACTIONAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNTINACCOUNTCURRENCY" source="AMOUNTINACCOUNTCURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNTINREFERENCECURRENCY" source="AMOUNTINREFERENCECURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AUTHORIZATIONCODE2" source="AUTHORIZATIONCODE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSTRANSACTIONIDE" source="BUSINESSTRANSACTIONIDE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSTRANSACTIONITEMNUMBER" source="BUSINESSTRANSACTIONITEMNUMBER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSTRANSACTIONITEM_1" source="BUSINESSTRANSACTIONITEM_1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUS_BUSINESSTRANSACTIONID" source="BUS_BUSINESSTRANSACTIONID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUS_BUSINESSTRANSACTIONID2" source="BUS_BUSINESSTRANSACTIONID2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUS_SOURCESYSTEM2" source="BUS_SOURCESYSTEM2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUS_SOURCESYSTEM3" source="BUS_SOURCESYSTEM3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CARDISSUE" source="CARDISSUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CAR_BUSINESSTRANSACTIONID" source="CAR_BUSINESSTRANSACTIONID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CAR_SOURCESYSTEM2" source="CAR_SOURCESYSTEM2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CHARGETYPE2" source="CHARGETYPE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ENDDATEOFINTERESTPERIOD" source="ENDDATEOFINTERESTPERIOD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FIN_FINANCIALCONTRACTID" source="FIN_FINANCIALCONTRACTID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FIN_SOURCESYSTEM" source="FIN_SOURCESYSTEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LATITUDE3" source="LATITUDE3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LONGITUDE3" source="LONGITUDE3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LOTID" source="LOTID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MERCHANTDISCOUNT2" source="MERCHANTDISCOUNT2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MERCHANTDISCOUNTCURRENCY2" source="MERCHANTDISCOUNTCURRENCY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NOMINALAMOUNT" source="NOMINALAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NOMINALAMOUNTCURRENCY" source="NOMINALAMOUNTCURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSTERMINALID2" source="POSTERMINALID2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSTINGDATEEXTERNALLYPROVIDED" source="POSTINGDATEEXTERNALLYPROVIDED"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSTINGDIRECTION" source="POSTINGDIRECTION"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="QUANTITY" source="QUANTITY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="RECONCILIATIONID" source="RECONCILIATIONID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REFERENCECURRENCY" source="REFERENCECURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REVERSALINDICATOR" source="REVERSALINDICATOR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SEQUENCENUMBER3" source="SEQUENCENUMBER3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SOURCESYSTEM_1" source="SOURCESYSTEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SOURCESYSTEM2" source="SOURCESYSTEM2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONCODE" source="TRANSACTIONCODE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONDATE" source="TRANSACTIONDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="UNIT" source="UNIT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="USEDEXCHANGERATETRANSACTIONREFERENCE" source="USEDEXCHANGERATETRANSACTIONREFERENCE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALUEDATE" source="VALUEDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FINANCIALCONTRACTID" source="FIN_FINANCIALCONTRACTID"/>
+    </input>
+    <joinAttribute name="FINANCIALCONTRACTID"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_2" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="BUSINESSPARTNERID2">
+        <descriptions defaultDescription="BUSINESSPARTNERID2"/>
+      </viewAttribute>
+      <viewAttribute id="BUSINESSPARTNERCATEGORY2">
+        <descriptions defaultDescription="BUSINESSPARTNERCATEGORY2"/>
+      </viewAttribute>
+      <viewAttribute id="CHILDRENATHOMEINDICATOR" aggregationType="sum">
+        <descriptions defaultDescription="CHILDRENATHOMEINDICATOR"/>
+      </viewAttribute>
+      <viewAttribute id="CONSULTATION">
+        <descriptions defaultDescription="CONSULTATION"/>
+      </viewAttribute>
+      <viewAttribute id="DATEOFBIRTH">
+        <descriptions defaultDescription="DATEOFBIRTH"/>
+      </viewAttribute>
+      <viewAttribute id="EDUCATIONLEVEL">
+        <descriptions defaultDescription="EDUCATIONLEVEL"/>
+      </viewAttribute>
+      <viewAttribute id="FIRSTCONTACTDATE2">
+        <descriptions defaultDescription="FIRSTCONTACTDATE2"/>
+      </viewAttribute>
+      <viewAttribute id="GENDER">
+        <descriptions defaultDescription="GENDER"/>
+      </viewAttribute>
+      <viewAttribute id="GIVENNAMES">
+        <descriptions defaultDescription="GIVENNAMES"/>
+      </viewAttribute>
+      <viewAttribute id="ISHOMEOWNER" aggregationType="sum">
+        <descriptions defaultDescription="ISHOMEOWNER"/>
+      </viewAttribute>
+      <viewAttribute id="LASTNAME">
+        <descriptions defaultDescription="LASTNAME"/>
+      </viewAttribute>
+      <viewAttribute id="MARITALSTATUS">
+        <descriptions defaultDescription="MARITALSTATUS"/>
+      </viewAttribute>
+      <viewAttribute id="NAMEATBIRTH">
+        <descriptions defaultDescription="NAMEATBIRTH"/>
+      </viewAttribute>
+      <viewAttribute id="NUMBERHOUSEHOLDMEMBERS" aggregationType="sum">
+        <descriptions defaultDescription="NUMBERHOUSEHOLDMEMBERS"/>
+      </viewAttribute>
+      <viewAttribute id="PLACEOFBIRTH">
+        <descriptions defaultDescription="PLACEOFBIRTH"/>
+      </viewAttribute>
+      <viewAttribute id="SOURCESYSTEM">
+        <descriptions defaultDescription="SOURCESYSTEM"/>
+      </viewAttribute>
+      <viewAttribute id="SOURCESYSTEM_1">
+        <descriptions defaultDescription="SOURCESYSTEM_1"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONPLACE2">
+        <descriptions defaultDescription="TRANSACTIONPLACE2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONPLACE2_1">
+        <descriptions defaultDescription="TRANSACTIONPLACE2_1"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONCOUNTRY2">
+        <descriptions defaultDescription="TRANSACTIONCOUNTRY2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONPLACE2_2">
+        <descriptions defaultDescription="TRANSACTIONPLACE2_2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONCOUNTRY2_1">
+        <descriptions defaultDescription="TRANSACTIONCOUNTRY2_1"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONAMOUNT" aggregationType="sum">
+        <descriptions defaultDescription="TRANSACTIONAMOUNT"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONPLACE2_3">
+        <descriptions defaultDescription="TRANSACTIONPLACE2_3"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONCOUNTRY2_2">
+        <descriptions defaultDescription="TRANSACTIONCOUNTRY2_2"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONAMOUNTCURRENCY">
+        <descriptions defaultDescription="TRANSACTIONAMOUNTCURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONAMOUNT_1" aggregationType="sum">
+        <descriptions defaultDescription="TRANSACTIONAMOUNT_1"/>
+      </viewAttribute>
+      <viewAttribute id="NOMINALAMOUNT" aggregationType="sum">
+        <descriptions defaultDescription="NOMINALAMOUNT"/>
+      </viewAttribute>
+      <viewAttribute id="NOMINALAMOUNT_1" aggregationType="sum">
+        <descriptions defaultDescription="NOMINALAMOUNT_1"/>
+      </viewAttribute>
+      <viewAttribute id="NOMINALAMOUNTCURRENCY">
+        <descriptions defaultDescription="NOMINALAMOUNTCURRENCY"/>
+      </viewAttribute>
+      <viewAttribute id="TRANSACTIONDATE">
+        <descriptions defaultDescription="TRANSACTIONDATE"/>
+      </viewAttribute>
+      <viewAttribute id="VALUEDATE">
+        <descriptions defaultDescription="VALUEDATE"/>
+      </viewAttribute>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="DWF20_FSDP::BUSINESSPARTNER">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSPARTNERID2" source="BUSINESSPARTNERID2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSPARTNERCATEGORY2" source="BUSINESSPARTNERCATEGORY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CHILDRENATHOMEINDICATOR" source="CHILDRENATHOMEINDICATOR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="CONSULTATION" source="CONSULTATION"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DATEOFBIRTH" source="DATEOFBIRTH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="EDUCATIONLEVEL" source="EDUCATIONLEVEL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="FIRSTCONTACTDATE2" source="FIRSTCONTACTDATE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GENDER" source="GENDER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="GIVENNAMES" source="GIVENNAMES"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ISHOMEOWNER" source="ISHOMEOWNER"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LASTNAME" source="LASTNAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MARITALSTATUS" source="MARITALSTATUS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NAMEATBIRTH" source="NAMEATBIRTH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NUMBERHOUSEHOLDMEMBERS" source="NUMBERHOUSEHOLDMEMBERS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLACEOFBIRTH" source="PLACEOFBIRTH"/>
+    </input>
+    <input node="Join_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="SOURCESYSTEM" source="SOURCESYSTEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SOURCESYSTEM_1" source="SOURCESYSTEM"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONPLACE2" source="TRANSACTIONPLACE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONPLACE2_1" source="TRANSACTIONPLACE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONCOUNTRY2" source="TRANSACTIONCOUNTRY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONPLACE2_2" source="TRANSACTIONPLACE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONCOUNTRY2_1" source="TRANSACTIONCOUNTRY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONAMOUNT" source="TRANSACTIONAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONPLACE2_3" source="TRANSACTIONPLACE2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONCOUNTRY2_2" source="TRANSACTIONCOUNTRY2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONAMOUNTCURRENCY" source="TRANSACTIONAMOUNTCURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONAMOUNT_1" source="TRANSACTIONAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NOMINALAMOUNT" source="NOMINALAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NOMINALAMOUNT_1" source="NOMINALAMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NOMINALAMOUNTCURRENCY" source="NOMINALAMOUNTCURRENCY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TRANSACTIONDATE" source="TRANSACTIONDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VALUEDATE" source="VALUEDATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BUSINESSPARTNERID2" source="BUSINESSPARTNERID2"/>
+    </input>
+    <joinAttribute name="BUSINESSPARTNERID2"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_2">
+<attributes>
+  <attribute id="EDUCATIONLEVEL" order="1" displayAttribute="false" attributeHierarchyActive="false">
+    <descriptions defaultDescription="EDUCATIONLEVEL"/>
+    <keyMapping columnObjectName="Join_2" columnName="EDUCATIONLEVEL"/>
+  </attribute>
+  <attribute id="TRANSACTIONPLACE2_1" order="3" displayAttribute="false" attributeHierarchyActive="false">
+    <descriptions defaultDescription="TRANSACTIONPLACE2_1"/>
+    <keyMapping columnObjectName="Join_2" columnName="TRANSACTIONPLACE2_1"/>
+  </attribute>
+  <attribute id="TRANSACTIONCOUNTRY2_1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+    <descriptions defaultDescription="TRANSACTIONCOUNTRY2_1"/>
+    <keyMapping columnObjectName="Join_2" columnName="TRANSACTIONCOUNTRY2_1"/>
+  </attribute>
+  <attribute id="TRANSACTIONAMOUNTCURRENCY" order="6" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+    <descriptions defaultDescription="TRANSACTIONAMOUNTCURRENCY"/>
+    <keyMapping columnObjectName="Join_2" columnName="TRANSACTIONAMOUNTCURRENCY"/>
+  </attribute>
+  <attribute id="NOMINALAMOUNTCURRENCY" order="7" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+    <descriptions defaultDescription="NOMINALAMOUNTCURRENCY"/>
+    <keyMapping columnObjectName="Join_2" columnName="NOMINALAMOUNTCURRENCY"/>
+  </attribute>
+</attributes>
+<calculatedAttributes/>
+<baseMeasures>
+  <measure id="ISHOMEOWNER" order="2" aggregationType="sum" measureType="simple">
+    <descriptions defaultDescription="ISHOMEOWNER"/>
+    <measureMapping columnObjectName="Join_2" columnName="ISHOMEOWNER"/>
+  </measure>
+  <measure id="TRANSACTIONAMOUNT_1" order="5" aggregationType="sum" measureType="simple">
+    <descriptions defaultDescription="TRANSACTIONAMOUNT_1"/>
+    <measureMapping columnObjectName="Join_2" columnName="TRANSACTIONAMOUNT_1"/>
+  </measure>
+</baseMeasures>
+<calculatedMeasures/>
+<restrictedMeasures/>
+<localDimensions/>
+</logicalModel>
+<layout>
+<shapes>
+<shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+<upperLeftCorner x="92" y="112"/>
+
+  <rectangleSize width="140"/>
+</shape>
+
+  <shape expanded="false" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+    <upperLeftCorner x="69" y="485"/>
+    <rectangleSize height="30" width="140"/>
+  </shape>
+  <shape modelObjectName="DWF20_FSDP::FINANCIALCONTRACT" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+    <upperLeftCorner x="166" y="107"/>
+    <rectangleSize width="327.9697265625"/>
+  </shape>
+  <shape modelObjectName="DWF20_FSDP::NDSO_BUSINESSTRANSACTION.NDSO_BUSINESSTRANSACTION.active_data" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+    <upperLeftCorner x="674" y="75"/>
+    <rectangleSize width="351.18359375"/>
+  </shape>
+  <shape expanded="true" modelObjectName="Join_2" modelObjectNameSpace="CalculationView">
+    <upperLeftCorner x="50" y="285"/>
+    <rectangleSize height="30" width="140"/>
+  </shape>
+  <shape modelObjectName="DWF20_FSDP::BUSINESSPARTNER" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+    <upperLeftCorner x="20" y="30"/>
+    <rectangleSize width="257.9697265625"/>
+  </shape>
+  <shape modelObjectName="Join_1" modelObjectNameSpace="Join_2" modelObjectType="JoinNodeInput">
+    <upperLeftCorner x="611" y="24"/>
+    <rectangleSize width="330.9697265625"/>
+  </shape>
+</shapes>
+</layout>
+</Calculation:scenario>

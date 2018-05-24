@@ -1,0 +1,65 @@
+{ 
+  "format_version" : 1,
+  "imports" : [
+    {
+      "target_table" : "DWF20_FSDP_SOURCEDATA::STAGE_BUSINESSTRANSACTION",
+      "source_data" : { 
+        "data_type" : "CSV", 
+        "file_name" : "DWF20_FSDP_SOURCEDATA::STAGE_BUSINESSTRANSACTION.csv",
+        "has_header" : true,
+        "type_config" : {
+          "delimiter" : ";",
+          "do_quote"  : true
+        }
+      },
+      "import_settings" : { 
+        "import_columns" : [ 
+    "BUSINESSTRANSACTIONIDE"               ,
+        "SOURCESYSTEM2"                        ,
+        "FIN_FINANCIALCONTRACTID"              ,
+        "FIN_SOURCESYSTEM"                     ,
+        "SEQUENCENUMBER3"                      ,
+        "CARDISSUE"                            ,
+        "POSTERMINALID2"                       ,
+        "TRANSACTIONPLACE2"                    ,
+        "TRANSACTIONCOUNTRY2"                  ,
+        "LATITUDE3"                            ,
+        "LONGITUDE3"                           ,
+        "AUTHORIZATIONCODE2"                   ,
+        "CHARGETYPE2"                          ,
+        "MERCHANTDISCOUNT2"                    ,
+        "MERCHANTDISCOUNTCURRENCY2"            ,
+        "BUSINESSTRANSACTIONITEM_1"            ,
+        "CAR_BUSINESSTRANSACTIONID"            ,
+        "CAR_SOURCESYSTEM2"                    ,
+        "BUSINESSTRANSACTIONITEMNUMBER"        ,
+        "TRANSACTIONCODE"                      ,
+        "TRANSACTIONAMOUNT"                    ,
+        "TRANSACTIONAMOUNTCURRENCY"            ,
+        "AMOUNTINACCOUNTCURRENCY"              ,
+        "AMOUNTINREFERENCECURRENCY"            ,
+        "REFERENCECURRENCY"                    ,
+        "USEDEXCHANGERATETRANSACTIONREFERENCE" ,
+        "NOMINALAMOUNT"                        ,
+        "NOMINALAMOUNTCURRENCY"                ,
+        "POSTINGDIRECTION"                     ,
+        "ENDUTCDateOFINTERESTPERIOD"           ,
+        "RECONCILIATIONID"                     ,
+        "QUANTITY"                             ,
+        "UNIT"                                 ,
+        "SOURCESYSTEM"                         ,
+        "BUS_BUSINESSTRANSACTIONID"            ,
+        "BUS_SOURCESYSTEM2"                    ,
+        "BUS_BUSINESSTRANSACTIONID2"           ,
+        "BUS_SOURCESYSTEM3"                    ,
+        "POSTINGUTCDateEXTERNALLYPROVIDED"     ,
+        "REVERSALINDICATOR"                    ,
+        "TRANSACTIONUTCDate"                   ,
+        "VALUEUTCDate"                         ,
+        "LOTID"                                ,
+        "FINANCIALCONTRACTID"                          
+        ]
+      }
+    }
+ ]
+}

@@ -1,0 +1,21 @@
+namespace DWF20_FSDP;
+
+using DWF20_FSDP :: CARDISSUE;
+
+entity "CARD" {
+    key "FIN_FINANCIALCONTRACTID" : String(64)                 not null;
+        "FIN_SOURCESYSTEM"        : String(40)                 not null;
+        "SEQUENCENUMBER3"         : association to "CARDISSUE" not null;
+        "ISSUENUMBER"             : Integer                    not null;
+        "NUMBERONCARD"            : LargeString;
+        "VALIDFROMONCARD"         : LocalDate;
+        "VALIDTOONCARD"           : LocalDate;
+        "LIFECYCLESTATUS2"        : String(10);
+        "ISSUEREASON"             : String(40);
+        "CARDDELIVERYDATE"        : LocalDate;
+        "PINDELIVERYDATE"         : LocalDate;
+        "SHIPPINGMETHOD"          : String(40);
+}
+technical configuration {
+    column store;
+};

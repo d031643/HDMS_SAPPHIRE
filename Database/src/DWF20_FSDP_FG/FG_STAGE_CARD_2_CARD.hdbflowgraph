@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowgraph:ContainerNode xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:flowgraph="http://www.sap.com/ndb/flowgraph/1.0" xmi:version="2.0" xmi:id="d9bd8cd3748d6fe13f7c8725390a297b" name="FG_STAGE_CARD_2_CARD" runtimeBehavior="BATCH_TASK">
+  <annotations key="sap.afm.layout" xmi:id="db46379d5ff0b316aeb29f231d56cdc0">
+    <annotations xmi:id="23e7ad15b1d3e22bc0b281eb2bfa5a47" key="x" value="10">
+    </annotations>
+    <annotations xmi:id="d5e60e5ca2154abdc9ef41b875e48fdb" key="y" value="10">
+    </annotations>
+    <annotations xmi:id="4e6b4e3de8d3b09153d206df04402cf8" key="width" value="100">
+    </annotations>
+    <annotations xmi:id="0f5e47023bcf1867b69957bf58c535c9" key="height" value="84">
+    </annotations>
+  </annotations>
+  <annotations xmi:id="2ea62afc65ebbfbed6aa7ce3e5b23211" key="sap.afm.palette">
+    <annotations xmi:id="f480660b5cbcc0c5b5bf06ac867c8320" key="additions" value=""/>
+  </annotations>
+  <annotations xmi:id="dde42f3c3e7b0e894e0435dd2ff4d27b" key="sap.afm.nodeType" value="ContainerNode">
+  </annotations>
+  <annotations xmi:id="cd16283e5888da33561f4bdf3444413a" key="sap.afm.nodeInputs">
+  </annotations>
+  <annotations xmi:id="a7e9d6482d216eb86a7e1c784215216c" key="sap.afm.nodeOutputs">
+  </annotations>
+  <tableMappings xmi:id="403b8a36ca8dde2d86eee0be9c888b0e" source="6cc7f537020fc8632f8d24641f2f62a1" target="81b811f18edc1beaa3e193c064807057">
+    <attributeMappings xmi:id="b7b0cbce5dda24504473831018db9291" source="d52721e963a6ed0a156777e6411be7d8" target="532965c5cd1aee82fd35bd934e22ff61">
+    </attributeMappings>
+    <attributeMappings xmi:id="b5b6c7054c968d8fb24d87e1e2d2494a" source="b30d17aedeaeb5df15ec5ddac36cd026" target="6189b0aef7ccc244397148f4a7682bc3">
+    </attributeMappings>
+    <attributeMappings xmi:id="05c1d24c10dde282e089be047dad490c" source="2ecd1bba4cff5f526ed8994bfbd7fb65" target="930380fd68b0c22a1ed6a1ca5be4ab16">
+    </attributeMappings>
+    <attributeMappings xmi:id="715547612553059de1c99b0947c325e7" source="1ec8c978a031d976cc8787a706657430" target="dcb7198bcb7d6a3288830c8bd09de839">
+    </attributeMappings>
+    <attributeMappings xmi:id="9ea087cbe102fcd3d37a1b98827298b5" source="613ed05a6ee68fd3d795ab92fea9a056" target="d5d1f5f5d12a9badc51c80907e047d74">
+    </attributeMappings>
+    <attributeMappings xmi:id="5b5aad51a218408e25394730635f9466" source="6dcab9b6dac3c3fff5eb000dd32827bf" target="48267fe0c1c2e9c1239630dc93d1e824">
+    </attributeMappings>
+    <attributeMappings xmi:id="e514ca220a6846b4fb28c00bc8e56573" source="38d46e58fc8e6f0bb5489f73e7232280" target="0bdbd76858366537d056a69cb0e1138c">
+    </attributeMappings>
+    <attributeMappings xmi:id="728a989ab7b6bac8f289ffc92908ab7e" source="0da8e086cdc6e1d0c1c59d301513de7a" target="3b3d8100ec2dcc09e7d66630d6bb7a20">
+    </attributeMappings>
+    <attributeMappings xmi:id="2edc1d2c69609b275a2360ee8c3bb818" source="db0aa03dfdeedcfa2741cc1e99007827" target="5a9601aaeea70576e3308f83734bbe6a">
+    </attributeMappings>
+    <attributeMappings xmi:id="8b270071d0e8d785c7cc4ad1b8b16874" source="f482573c8567cc911730ce4309ddcc01" target="e67e0d36c8eb0476483f1db2d1a59af8">
+    </attributeMappings>
+    <attributeMappings xmi:id="2e4fd2678eb5fa8d96889313a801e22e" source="58aa9ef9e758db6ce53c7f739570c843" target="ffbd63295ac7561a5f7ba3192ae04c83">
+    </attributeMappings>
+    <attributeMappings xmi:id="fcd7207ce6910f250df074322c85666e" source="1f2760243e077aff9b69a5b9124db638" target="c336ee247e6ae923aff7b4f0c03c89c4">
+    </attributeMappings>
+  </tableMappings>
+  <nodes xmi:id="18ab5cd33bfe02708a9e68d6f5a2b436" name="DataTarget" catalogObjectName="DWF20_FSDP::CARD" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN" truncateTable="true">
+    <annotations key="sap.afm.layout" xmi:id="85e24955ef2132f20824144496b64be0">
+      <annotations xmi:id="487033ccee16921e8f75a095243acc6a" key="x" value="440">
+      </annotations>
+      <annotations xmi:id="732378761594d642f3563500324dde65" key="y" value="168">
+      </annotations>
+      <annotations xmi:id="a3448381acc54b469081835e2cadb670" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="c412665e2d2959bca57ae201288b051f" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="324f0424b78f1a395b9baa978f05bb65" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="2c08315708a6c0a84540b6803ac3f323" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="eb47886d475e1e313d5820a81fe41cdf" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="d5276c31a9b8d82e82be6324cedc5ecb" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="d499e527e1438dd30584ca31105b1c93" key="sap.afm.displayName" value="Data Target">
+    </annotations>
+    <annotations xmi:id="bd7ce746a45121135078edfc02a0e8d0" key="columns" value="[{&quot;name&quot;:&quot;FIN_FINANCIALCONTRACTID&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;FIN_SOURCESYSTEM&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;SEQUENCENUMBER3.FIN_FINANCIALCONTRACTID&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;ISSUENUMBER&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;NUMBERONCARD&quot;,&quot;type&quot;:&quot;NCLOB&quot;,&quot;length&quot;:2147483647,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;VALIDFROMONCARD&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;VALIDTOONCARD&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;LIFECYCLESTATUS2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ISSUEREASON&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CARDDELIVERYDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;PINDELIVERYDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SHIPPINGMETHOD&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <inputs xmi:id="81b811f18edc1beaa3e193c064807057" name="DataTarget">
+      <attributes xmi:id="532965c5cd1aee82fd35bd934e22ff61" name="FIN_FINANCIALCONTRACTID" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="c044702b7af9a60eab34a863e3dbac20" key="sap.im.primaryKey" value="true">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="6189b0aef7ccc244397148f4a7682bc3" name="FIN_SOURCESYSTEM" type="NVARCHAR" nullable="false" length="40">
+        <annotations xmi:id="8d7defc5acac824f28e2c734bbb1b713" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="c336ee247e6ae923aff7b4f0c03c89c4" name="SEQUENCENUMBER3.FIN_FINANCIALCONTRACTID" type="NVARCHAR" nullable="false" length="64">
+      </attributes>
+      <attributes xmi:id="930380fd68b0c22a1ed6a1ca5be4ab16" name="ISSUENUMBER" type="INTEGER" nullable="false" length="10">
+        <annotations xmi:id="1f2138070d3d4aba65e8547cfa6c1e43" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="dcb7198bcb7d6a3288830c8bd09de839" name="NUMBERONCARD" type="NCLOB" nullable="true" length="2147483647">
+        <annotations xmi:id="99ac8947f0c8c9d3c5bcf8bdf067e68b" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="d5d1f5f5d12a9badc51c80907e047d74" name="VALIDFROMONCARD" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="b384e7fff416a20b8324ac4e17a50499" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="48267fe0c1c2e9c1239630dc93d1e824" name="VALIDTOONCARD" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="ad1b6489a1651552aea476a99efd8b22" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="0bdbd76858366537d056a69cb0e1138c" name="LIFECYCLESTATUS2" type="NVARCHAR" nullable="true" length="10">
+        <annotations xmi:id="7ce3917bdef82295d35e08b0e315b6a7" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="3b3d8100ec2dcc09e7d66630d6bb7a20" name="ISSUEREASON" type="NVARCHAR" nullable="true" length="40">
+        <annotations xmi:id="74257a74f6277b38579ae3bb8da9f274" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="5a9601aaeea70576e3308f83734bbe6a" name="CARDDELIVERYDATE" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="67d499fe781a4d222640a7bc3cc45e89" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="e67e0d36c8eb0476483f1db2d1a59af8" name="PINDELIVERYDATE" type="DATE" nullable="true" length="10">
+        <annotations xmi:id="fd843e24f59201e08bf6ce411e4dbcf8" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+      <attributes xmi:id="ffbd63295ac7561a5f7ba3192ae04c83" name="SHIPPINGMETHOD" type="NVARCHAR" nullable="true" length="40">
+        <annotations xmi:id="414764bad1c3a3bf6a8ee9d8c5fe2db8" key="sap.im.primaryKey" value="false">
+        </annotations>
+      </attributes>
+    </inputs>
+  </nodes>
+  <nodes xmi:id="907683a447ac7d9274053e86df2e4846" name="DataSource" catalogObjectName="DWF20_FSDP_SOURCEDATA::STAGE_CARD" type="DATABASE_TABLE" xsi:type="flowgraph:DataNode" dataLayout="COLUMN">
+    <annotations key="sap.afm.layout" xmi:id="d9a469a664455481f91d4c28929a6554">
+      <annotations xmi:id="3ff97a9be9ac7963d74af8c0faa8c38f" key="x" value="37">
+      </annotations>
+      <annotations xmi:id="0dcde88a592729ee87d8aad533c6a085" key="y" value="177">
+      </annotations>
+      <annotations xmi:id="1f7c2f969d26ec7e5bf838d50a436f7f" key="width" value="120">
+      </annotations>
+      <annotations xmi:id="34229f9a9ae79e348fc910786440d59a" key="height" value="115">
+      </annotations>
+    </annotations>
+    <annotations xmi:id="c36c38f690bf408f5a58c8e1c77d7580" key="sap.afm.description">
+    </annotations>
+    <annotations xmi:id="b54276b8660aca5c09850a4f38274be6" key="sap.afm.nodeType" value="DataNode">
+    </annotations>
+    <annotations xmi:id="082334a7d4627c291649305b7dcaccaf" key="sap.afm.nodeInputs">
+    </annotations>
+    <annotations xmi:id="97050db754883c41b199b037270517bf" key="sap.afm.nodeOutputs">
+    </annotations>
+    <annotations xmi:id="49bfc69446927bbd747a6bbf141b6766" key="sap.afm.displayName" value="Data Source">
+    </annotations>
+    <annotations xmi:id="b44426f98fda1a424ac251c5c3ce7f1b" key="columns" value="[{&quot;name&quot;:&quot;FIN_FINANCIALCONTRACTID&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;,&quot;primarykey&quot;:true},{&quot;name&quot;:&quot;FIN_SOURCESYSTEM&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;SEQUENCENUMBER3&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:64,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;ISSUENUMBER&quot;,&quot;type&quot;:&quot;INTEGER&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;false&quot;},{&quot;name&quot;:&quot;NUMBERONCARD&quot;,&quot;type&quot;:&quot;NCLOB&quot;,&quot;length&quot;:2147483647,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;VALIDFROMONCARD&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;VALIDTOONCARD&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;LIFECYCLESTATUS2&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;ISSUEREASON&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;CARDDELIVERYDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;PINDELIVERYDATE&quot;,&quot;type&quot;:&quot;DATE&quot;,&quot;length&quot;:10,&quot;nullable&quot;:&quot;true&quot;},{&quot;name&quot;:&quot;SHIPPINGMETHOD&quot;,&quot;type&quot;:&quot;NVARCHAR&quot;,&quot;length&quot;:40,&quot;nullable&quot;:&quot;true&quot;}]">
+    </annotations>
+    <outputs xmi:id="6cc7f537020fc8632f8d24641f2f62a1" name="DataSource">
+      <attributes xmi:id="d52721e963a6ed0a156777e6411be7d8" name="FIN_FINANCIALCONTRACTID" type="NVARCHAR" nullable="false" length="64">
+        <annotations xmi:id="8798d2088de464fdb9b747e1dc652b04" key="sap.im.primaryKey" value="true"/>
+      </attributes>
+      <attributes xmi:id="b30d17aedeaeb5df15ec5ddac36cd026" name="FIN_SOURCESYSTEM" type="NVARCHAR" nullable="false" length="40">
+      </attributes>
+      <attributes xmi:id="1f2760243e077aff9b69a5b9124db638" name="SEQUENCENUMBER3" type="NVARCHAR" nullable="false" length="64">
+      </attributes>
+      <attributes xmi:id="2ecd1bba4cff5f526ed8994bfbd7fb65" name="ISSUENUMBER" type="INTEGER" nullable="false" length="10">
+      </attributes>
+      <attributes xmi:id="1ec8c978a031d976cc8787a706657430" name="NUMBERONCARD" type="NCLOB" nullable="true" length="2147483647">
+      </attributes>
+      <attributes xmi:id="613ed05a6ee68fd3d795ab92fea9a056" name="VALIDFROMONCARD" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="6dcab9b6dac3c3fff5eb000dd32827bf" name="VALIDTOONCARD" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="38d46e58fc8e6f0bb5489f73e7232280" name="LIFECYCLESTATUS2" type="NVARCHAR" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="0da8e086cdc6e1d0c1c59d301513de7a" name="ISSUEREASON" type="NVARCHAR" nullable="true" length="40">
+      </attributes>
+      <attributes xmi:id="db0aa03dfdeedcfa2741cc1e99007827" name="CARDDELIVERYDATE" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="f482573c8567cc911730ce4309ddcc01" name="PINDELIVERYDATE" type="DATE" nullable="true" length="10">
+      </attributes>
+      <attributes xmi:id="58aa9ef9e758db6ce53c7f739570c843" name="SHIPPINGMETHOD" type="NVARCHAR" nullable="true" length="40">
+      </attributes>
+    </outputs>
+  </nodes>
+</flowgraph:ContainerNode>
